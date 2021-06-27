@@ -8,7 +8,7 @@ let getByTestId;
 beforeEach(()=>{
     const component = render(<Counter />);
     getByTestId = component.getByTestId;
-})
+});
 
 test("header renders with correct text", ()=>{
     const headerEl = getByTestId("header");
