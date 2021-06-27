@@ -8,7 +8,12 @@ const Counter = () => {
     return (
         <div>
             <h3 data-testid="header">My Counter</h3>
-            <h2 data-testid="counter">{counterValue}</h2>
+            <h2 
+                data-testid="counter" 
+                className={`${counterValue >= 100 ? "green": counterValue <= -100 ? "red" : ""}`}
+            >
+                {counterValue}
+            </h2>
             <button data-testid="sub-btn" onClick={()=> setCounterValue(parseInt(counterValue - inputValue))}>-</button>
             <input 
             data-testid="input" 
