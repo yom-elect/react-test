@@ -85,7 +85,7 @@ test("changing input value then clicking on add btn works correctly", ()=>{
     expect(counterEl.textContent).toBe("5");
 });
 
-test("changing input value then clicking on add btn works correctly", ()=>{
+test("changing input value then clicking on subtract btn works correctly", ()=>{
     const subtractBtn = getByTestId("sub-btn");
     const counterEl = getByTestId("counter");
     const inputEl = getByTestId("input");
