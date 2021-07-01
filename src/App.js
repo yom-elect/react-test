@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       {/* <Counter/> */}
-      <ContactModal onSubmit={() => console.log("submit")}/>
+      <ContactModal submit={() => console.log("submit")}/>
     </div>
   );
 }
